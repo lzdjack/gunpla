@@ -30,8 +30,8 @@ export const useValidNodeOffsetRect = (node: TreeNode) => {
       engine.cursor.dragType === CursorDragType.Move
     )
       return
-    const nextRect = viewport.getValidNodeOffsetRect(node)
-    if (!isEqualRect(rectRef.current, nextRect) && nextRect) {
+    const nextRect = viewport.getValidNodeOffsetRect(node) as any
+    if (!isEqualRect(rectRef.current as any, nextRect) && nextRect) {
       rectRef.current = nextRect
       forceUpdate([])
     }

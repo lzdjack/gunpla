@@ -22,7 +22,7 @@ export const SelectionBox: React.FC<ISelectionBoxProps> = (props) => {
   const designer = useDesigner()
   const prefix = usePrefix('aux-selection-box')
   const innerPrefix = usePrefix('aux-selection-box-inner')
-  const nodeRect = useValidNodeOffsetRect(props.node)
+  const nodeRect = useValidNodeOffsetRect(props.node) as any
   const createSelectionStyle = () => {
     const baseStyle: React.CSSProperties = {
       position: 'absolute',

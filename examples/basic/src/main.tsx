@@ -28,7 +28,6 @@ import {
 import { Content } from './content'
 import { Space, Button, Radio } from 'antd'
 import { GithubOutlined } from '@ant-design/icons'
-//import { Sandbox } from '@designable/react-sandbox'
 import 'antd/dist/antd.less'
 
 const RootBehavior = createBehavior({
@@ -425,7 +424,7 @@ const App = () => {
           <WorkspacePanel>
             <ToolbarPanel>
               <DesignerToolsWidget />
-              <ViewToolsWidget />{' '}
+              <ViewToolsWidget />
             </ToolbarPanel>
             <ViewportPanel>
               <ViewPanel type="DESIGNABLE">{() => <Content />}</ViewPanel>

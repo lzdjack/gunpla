@@ -34,6 +34,9 @@ const getAlias = () => {
 export default {
   mode: 'development',
   devtool: 'inline-source-map', // 嵌入到源文件中
+  devServer: {
+    port: 3002,
+  },
   stats: {
     entrypoints: false,
     children: false,

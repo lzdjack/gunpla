@@ -8,6 +8,7 @@ export const Content = () => (
     components={{
       Field: observer((props) => {
         const node = useTreeNode()
+
         return (
           <span
             {...props}

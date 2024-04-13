@@ -29,6 +29,7 @@ const getAlias = () => {
         [`@designable/${name}$`]: `${_path}/src`,
       }
     }, deps)
+
   return alias
 }
 export default {

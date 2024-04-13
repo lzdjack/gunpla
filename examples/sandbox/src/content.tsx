@@ -33,7 +33,6 @@ export const Content = () => (
               border: '1px solid #ddd',
               display: 'flex',
               padding: 10,
-              height: props.children ? 'auto' : 150,
               justifyContent: 'center',
               alignItems: 'center',
             }}

@@ -40,7 +40,7 @@ export const useFreeSelectionEffect = (engine: Engine) => {
       )
       const selected: [TreeNode, DOMRect][] = []
       tree.eachChildren((node) => {
-        const nodeRect = viewport.getValidNodeOffsetRect(node)
+        const nodeRect = viewport.getValidNodeOffsetRect(node) as any
         if (nodeRect && isCrossRectInRect(selectionRect, nodeRect)) {
           selected.push([node, nodeRect])
         }
