@@ -1,4 +1,4 @@
-import { createLocales } from '@designable/core'
+import { createLocales } from '@gunpla/core'
 
 export const Upload = {
   'zh-CN': {

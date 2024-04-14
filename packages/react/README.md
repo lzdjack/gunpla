@@ -1,1 +1,1 @@
-# @designable/react
+# @gunpla/react

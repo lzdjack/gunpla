@@ -1,1 +1,1 @@
-# @designable/shared
+# @gunpla/shared

@@ -1,5 +1,5 @@
 {
-  "name": "@designable/react-settings-form",
+  "name": "@gunpla/react-settings-form",
   "version": "1.0.0-beta.47",
   "license": "MIT",
   "main": "lib",
@@ -10,12 +10,12 @@
   "module": "esm",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alibaba/designable.git"
+    "url": "git+https://github.com/lzdjack/gunpla.git"
   },
   "bugs": {
-    "url": "https://github.com/alibaba/designable/issues"
+    "url": "https://github.com/lzdjack/gunpla/issues"
   },
-  "homepage": "https://github.com/alibaba/designable#readme",
+  "homepage": "https://github.com/lzdjack/gunpla#readme",
   "scripts": {
     "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && npm run build:umd && ts-node copy",
     "build:cjs": "tsc --project tsconfig.build.json",
@@ -42,9 +42,9 @@
   },
   "dependencies": {
     "@babel/parser": "^7.14.7",
-    "@designable/core": "1.0.0-beta.47",
-    "@designable/react": "1.0.0-beta.47",
-    "@designable/shared": "1.0.0-beta.47",
+    "@gunpla/core": "1.0.0-beta.47",
+    "@gunpla/react": "1.0.0-beta.47",
+    "@gunpla/shared": "1.0.0-beta.47",
     "@monaco-editor/react": "^4.2.1",
     "monaco-editor": "^0.25.2",
     "prettier": "^2.3.2",

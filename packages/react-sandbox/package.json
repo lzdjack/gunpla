@@ -1,5 +1,5 @@
 {
-  "name": "@designable/react-sandbox",
+  "name": "@gunpla/react-sandbox",
   "version": "1.0.0-beta.47",
   "license": "MIT",
   "main": "lib",
@@ -10,12 +10,12 @@
   "module": "esm",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alibaba/designable.git"
+    "url": "git+https://github.com/lzdjack/gunpla.git"
   },
   "bugs": {
-    "url": "https://github.com/alibaba/designable/issues"
+    "url": "https://github.com/lzdjack/gunpla/issues"
   },
-  "homepage": "https://github.com/alibaba/designable#readme",
+  "homepage": "https://github.com/lzdjack/gunpla#readme",
   "scripts": {
     "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && npm run build:umd",
     "build:cjs": "tsc --project tsconfig.build.json",
@@ -26,8 +26,8 @@
     "react": "16.x || 17.x"
   },
   "dependencies": {
-    "@designable/react": "1.0.0-beta.47",
-    "@designable/shared": "1.0.0-beta.47"
+    "@gunpla/react": "1.0.0-beta.47",
+    "@gunpla/shared": "1.0.0-beta.47"
   },
   "publishConfig": {
     "access": "public"

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { Space, Button, Radio } from 'antd'
 import { GithubOutlined } from '@ant-design/icons'
-import { useDesigner, TextWidget } from '@designable/react'
-import { GlobalRegistry } from '@designable/core'
+import { useDesigner, TextWidget } from '@gunpla/react'
+import { GlobalRegistry } from '@gunpla/core'
 import { observer } from '@formily/react'
 import { loadInitialSchema, saveSchema } from '../service'
 
@@ -32,7 +32,7 @@ export const ActionsWidget = observer(() => {
           GlobalRegistry.setDesignerLanguage(e.target.value)
         }}
       />
-      <Button href="https://github.com/alibaba/designable" target="_blank">
+      <Button href="https://github.com/lzdjack/gunpla" target="_blank">
         <GithubOutlined />
         Github
       </Button>

@@ -1,1 +1,1 @@
-# @designable/react-settings-form
+# @gunpla/react-settings-form

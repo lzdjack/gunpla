@@ -1,5 +1,5 @@
 import React from 'react'
-import { ComponentTreeWidget, useTreeNode } from '@designable/react'
+import { ComponentTreeWidget, useTreeNode } from '@gunpla/react'
 import { observer } from '@formily/reactive-react'
 import 'antd/dist/antd.css'
 
@@ -24,11 +24,14 @@ export const Content = () => (
           </span>
         )
       }),
-      Card: (props) => {
+      Card: observer((props) => {
         return (
           <div
             {...props}
             style={{
+              width: 200,
+              height: 100,
+              ...props.style,
               background: '#eee',
               border: '1px solid #ddd',
               display: 'flex',
@@ -40,7 +43,7 @@ export const Content = () => (
             {props.children ? props.children : <span>拖拽字段进入该区域</span>}
           </div>
         )
-      },
+      }),
     }}
   />
 )

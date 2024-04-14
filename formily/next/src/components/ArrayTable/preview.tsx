@@ -1,14 +1,14 @@
 import React from 'react'
 import { Table } from '@alifd/next'
 import { TableProps } from '@alifd/next/types/table'
-import { TreeNode, createBehavior, createResource } from '@designable/core'
+import { TreeNode, createBehavior, createResource } from '@gunpla/core'
 import {
   useTreeNode,
   TreeNodeWidget,
   DroppableWidget,
   useNodeIdProps,
   DnFC,
-} from '@designable/react'
+} from '@gunpla/react'
 import { ArrayBase } from '@formily/next'
 import { observer } from '@formily/react'
 import { LoadTemplate } from '../../common/LoadTemplate'

@@ -1,4 +1,4 @@
-import { TreeNode, Engine } from '@designable/core'
+import { TreeNode, Engine } from '@gunpla/core'
 
 export type ComponentNameMatcher =
   | string

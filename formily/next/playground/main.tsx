@@ -18,14 +18,9 @@ import {
   ViewPanel,
   SettingsPanel,
   ComponentTreeWidget,
-} from '@designable/react'
-import { SettingsForm } from '@designable/react-settings-form'
-import {
-  createDesigner,
-  GlobalRegistry,
-  Shortcut,
-  KeyCode,
-} from '@designable/core'
+} from '@gunpla/react'
+import { SettingsForm } from '@gunpla/react-settings-form'
+import { createDesigner, GlobalRegistry, Shortcut, KeyCode } from '@gunpla/core'
 import {
   LogoWidget,
   ActionsWidget,

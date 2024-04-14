@@ -1,3 +1,3 @@
 import baseConfig from '../../scripts/rollup.base.js'
 
-export default baseConfig('designable.react', 'Designable.React')
+export default baseConfig('gunpla.react', 'Gunpla.React')

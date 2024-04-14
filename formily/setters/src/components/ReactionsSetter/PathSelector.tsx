@@ -1,6 +1,6 @@
 import React from 'react'
-import { TreeNode } from '@designable/core'
-import { useSelectedNode } from '@designable/react'
+import { TreeNode } from '@gunpla/core'
+import { useSelectedNode } from '@gunpla/react'
 import { TreeSelectProps, TreeSelect } from 'antd'
 
 export interface IPathSelectorProps

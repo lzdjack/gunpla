@@ -1,5 +1,5 @@
-import { AppendNodeEvent, TreeNode } from '@designable/core'
-import { useDesigner } from '@designable/react'
+import { AppendNodeEvent, TreeNode } from '@gunpla/core'
+import { useDesigner } from '@gunpla/react'
 import { matchComponent, matchChildComponent } from '../shared'
 
 export const useDropTemplate = (

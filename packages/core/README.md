@@ -1,1 +1,1 @@
-# @designable/core
+# @gunpla/core

@@ -1,4 +1,4 @@
-import { createLocales } from '@designable/core'
+import { createLocales } from '@gunpla/core'
 import { Input } from './Input'
 
 export const Password = createLocales(Input, {

@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
 import { Card, CardProps } from 'antd'
-import { TreeNode, createResource } from '@designable/core'
+import { TreeNode, createResource } from '@gunpla/core'
 import {
   useTreeNode,
   TreeNodeWidget,
   DroppableWidget,
   useNodeIdProps,
   DnFC,
-} from '@designable/react'
+} from '@gunpla/react'
 import { ArrayBase } from '@formily/antd'
 import { observer } from '@formily/react'
 import { LoadTemplate } from '../../common/LoadTemplate'

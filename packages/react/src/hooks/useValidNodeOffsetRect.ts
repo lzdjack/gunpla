@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from 'react'
-import { TreeNode, CursorStatus, CursorDragType } from '@designable/core'
-import { LayoutObserver } from '@designable/shared'
+import { TreeNode, CursorStatus, CursorDragType } from '@gunpla/core'
+import { LayoutObserver } from '@gunpla/shared'
 import { useViewport } from './useViewport'
 import { useDesigner } from './useDesigner'
 

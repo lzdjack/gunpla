@@ -1,5 +1,5 @@
 {
-  "name": "@designable/shared",
+  "name": "@gunpla/shared",
   "version": "1.0.0-beta.47",
   "license": "MIT",
   "main": "lib",
@@ -10,12 +10,12 @@
   "module": "esm",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alibaba/designable.git"
+    "url": "git+https://github.com/lzdjack/gunpla.git"
   },
   "bugs": {
-    "url": "https://github.com/alibaba/designable/issues"
+    "url": "https://github.com/lzdjack/gunpla/issues"
   },
-  "homepage": "https://github.com/alibaba/designable#readme",
+  "homepage": "https://github.com/lzdjack/gunpla#readme",
   "scripts": {
     "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && npm run build:umd",
     "build:cjs": "tsc --project tsconfig.build.json",

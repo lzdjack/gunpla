@@ -1,8 +1,8 @@
-import { Engine } from '@designable/core'
+import { Engine } from '@gunpla/core'
 import {
   transformToSchema,
   transformToTreeNode,
-} from '@designable/formily-transformer'
+} from '@gunpla/formily-transformer'
 import { message } from 'antd'
 
 export const saveSchema = (designer: Engine) => {

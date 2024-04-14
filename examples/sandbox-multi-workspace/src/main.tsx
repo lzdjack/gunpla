@@ -17,18 +17,18 @@ import {
   ViewportPanel,
   SettingsPanel,
   HistoryWidget,
-} from '@designable/react'
-import { SettingsForm, MonacoInput } from '@designable/react-settings-form'
+} from '@gunpla/react'
+import { SettingsForm, MonacoInput } from '@gunpla/react-settings-form'
 import { observer } from '@formily/react'
 import {
   createDesigner,
   createResource,
   createBehavior,
   GlobalRegistry,
-} from '@designable/core'
+} from '@gunpla/core'
 import { Space, Button, Radio } from 'antd'
 import { GithubOutlined } from '@ant-design/icons'
-import { Sandbox } from '@designable/react-sandbox'
+import { Sandbox } from '@gunpla/react-sandbox'
 import 'antd/dist/antd.less'
 
 const RootBehavior = createBehavior({
@@ -312,7 +312,7 @@ const Actions = observer(() => (
         GlobalRegistry.setDesignerLanguage(e.target.value)
       }}
     />
-    <Button href="https://github.com/alibaba/designable" target="_blank">
+    <Button href="https://github.com/lzdjack/gunpla" target="_blank">
       <GithubOutlined />
       Github
     </Button>

@@ -12,14 +12,9 @@ import {
 } from '@formily/react'
 import { FormItem } from '@formily/antd'
 import { each, reduce } from '@formily/shared'
-import { createBehavior } from '@designable/core'
-import {
-  useDesigner,
-  useTreeNode,
-  useComponents,
-  DnFC,
-} from '@designable/react'
-import { isArr, isStr } from '@designable/shared'
+import { createBehavior } from '@gunpla/core'
+import { useDesigner, useTreeNode, useComponents, DnFC } from '@gunpla/react'
+import { isArr, isStr } from '@gunpla/shared'
 import { Container } from '../../common/Container'
 import { AllLocales } from '../../locales'
 

@@ -1,6 +1,6 @@
 import { ISchema, Schema } from '@formily/json-schema'
-import { ITreeNode } from '@designable/core'
-import { clone, uid } from '@designable/shared'
+import { ITreeNode } from '@gunpla/core'
+import { clone, uid } from '@gunpla/shared'
 
 export interface ITransformerOptions {
   designableFieldName?: string

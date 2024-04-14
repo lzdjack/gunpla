@@ -1,5 +1,5 @@
 {
-  "name": "@designable/sandbox-example",
+  "name": "@gunpla/sandbox-example",
   "version": "1.0.0-beta.47",
   "license": "MIT",
   "private": true,
@@ -25,11 +25,11 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "@designable/core": "1.0.0-beta.47",
-    "@designable/react": "1.0.0-beta.47",
-    "@designable/react-sandbox": "1.0.0-beta.47",
-    "@designable/react-settings-form": "1.0.0-beta.47",
-    "@designable/shared": "1.0.0-beta.47",
+    "@gunpla/core": "1.0.0-beta.47",
+    "@gunpla/react": "1.0.0-beta.47",
+    "@gunpla/react-sandbox": "1.0.0-beta.47",
+    "@gunpla/react-settings-form": "1.0.0-beta.47",
+    "@gunpla/shared": "1.0.0-beta.47",
     "@formily/reactive": "^2.0.2",
     "@formily/reactive-react": "^2.0.2",
     "antd": "^4.15.2",

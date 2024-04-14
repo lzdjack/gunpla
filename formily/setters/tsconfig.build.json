@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "./lib",
     "paths": {
-      "@designable/*": ["../../packages/*", "../../formily/*"]
+      "@gunpla/*": ["../../packages/*", "../../formily/*"]
     },
     "declaration": true
   }

@@ -1,1 +1,1 @@
-# @designable/react-sandbox
+# @gunpla/react-sandbox

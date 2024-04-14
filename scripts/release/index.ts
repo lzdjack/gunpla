@@ -17,7 +17,7 @@ const LernaJSON = fs.readJSONSync(path.resolve(__dirname, '../../lerna.json'))
 
 const ReleaseTitle = 'Designable Release 🚀'
 
-const GithubRepo = 'https://github.com/alibaba/designable'
+const GithubRepo = 'https://github.com/lzdjack/gunpla'
 
 const CommitGroupBy: Array<[string, string[]]> = [
   [':tada: Enhancements', ['feat', 'features', 'feature']],
@@ -119,8 +119,8 @@ const createReleaseNote = () => {
         body,
         draft: false,
         prerelease: isPrerelease(to),
-        owner: 'alibaba',
-        repo: 'designable',
+        owner: 'lzdjack',
+        repo: 'gunpla',
         endpoint: 'https://api.github.com',
         auth: {
           token,
