@@ -1,6 +1,6 @@
 {
   "name": "@gunpla/react-sandbox",
-  "version": "1.0.1-beta.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",
@@ -26,8 +26,8 @@
     "react": "16.x || 17.x"
   },
   "dependencies": {
-    "@gunpla/react": "1.0.1-beta.0",
-    "@gunpla/shared": "1.0.1-beta.0"
+    "@gunpla/react": "1.0.1",
+    "@gunpla/shared": "1.0.1"
   },
   "publishConfig": {
     "access": "public"
