@@ -1,6 +1,6 @@
 {
   "name": "@gunpla/shared",
-  "version": "1.0.0",
+  "version": "1.0.1-beta.0",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",
@@ -28,5 +28,5 @@
   "dependencies": {
     "requestidlecallback": "^0.3.0"
   },
-  "gitHead": "bda070c137ba0003cc4451b2208e089d2e326b23"
+  "gitHead": "2b059704d87862e441eef417c2cdf6d95fa24f6d"
 }

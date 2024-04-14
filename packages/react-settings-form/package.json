@@ -1,6 +1,6 @@
 {
   "name": "@gunpla/react-settings-form",
-  "version": "1.0.0",
+  "version": "1.0.1-beta.0",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",
@@ -42,9 +42,9 @@
   },
   "dependencies": {
     "@babel/parser": "^7.14.7",
-    "@gunpla/core": "1.0.0",
-    "@gunpla/react": "1.0.0",
-    "@gunpla/shared": "1.0.0",
+    "@gunpla/core": "1.0.1-beta.0",
+    "@gunpla/react": "1.0.1-beta.0",
+    "@gunpla/shared": "1.0.1-beta.0",
     "@monaco-editor/react": "^4.2.1",
     "monaco-editor": "^0.25.2",
     "prettier": "^2.3.2",
@@ -54,5 +54,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "bda070c137ba0003cc4451b2208e089d2e326b23"
+  "gitHead": "2b059704d87862e441eef417c2cdf6d95fa24f6d"
 }

@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.0(2024-04-14)
+
+### :tada: Enhancements
+
+1. [feat(init): init](https://github.com/lzdjack/gunpla/commit/d59a351) :point_right: ( [lzdjack](https://github.com/lzdjack) )
+
 ## v1.0.0-beta.47(2024-04-14)
 
 ### :tada: Enhancements
@@ -401,9 +407,3 @@
 ### :rose: Improve code quality
 
 1. [refactor(core): change defaultComponentTree type ITreeNode[] to ITreeNode](https://github.com/lzdjack/gunpla/commit/40b2af7) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
-
-## v1.0.0-beta.7(2021-09-22)
-
-### :beetle: Bug Fixes
-
-1. [fix(react): fix ui can not refresh with top rerender](https://github.com/lzdjack/gunpla/commit/cf63e82) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
