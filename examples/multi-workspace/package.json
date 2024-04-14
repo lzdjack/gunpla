@@ -1,6 +1,6 @@
 {
   "name": "@gunpla/multi-workspace-example",
-  "version": "1.0.0-beta.47",
+  "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "engines": {
@@ -25,13 +25,13 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "@gunpla/core": "1.0.0-beta.47",
-    "@gunpla/react": "1.0.0-beta.47",
-    "@gunpla/react-sandbox": "1.0.0-beta.47",
-    "@gunpla/react-settings-form": "1.0.0-beta.47",
-    "@gunpla/shared": "1.0.0-beta.47",
     "@formily/reactive": "^2.0.2",
     "@formily/reactive-react": "^2.0.2",
+    "@gunpla/core": "1.0.0",
+    "@gunpla/react": "1.0.0",
+    "@gunpla/react-sandbox": "1.0.0",
+    "@gunpla/react-settings-form": "1.0.0",
+    "@gunpla/shared": "1.0.0",
     "antd": "^4.15.2",
     "react": "^16.8.x",
     "react-dom": "^16.8.x",
