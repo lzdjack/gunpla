@@ -11,6 +11,7 @@ import { calcSpeedFactor, createUniformSpeedAnimation } from '@gunpla/shared'
 import { useScreen, useDesigner, usePrefix } from '../../hooks'
 import { IconWidget } from '../../widgets'
 import { ResizeHandle, ResizeHandleType } from './handle'
+import { InfiniteViewer } from './InfiniteViewer'
 
 import cls from 'classnames'
 import './styles.less'
@@ -150,41 +151,48 @@ export const ResponsiveSimulator: React.FC<IResponsiveSimulatorProps> =
           ...props.style,
         }}
       >
-        <div
-          ref={container}
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            height: '100%',
-            width: '100%',
-            overflow: 'overlay',
-          }}
-        >
+        <InfiniteViewer>
           <div
-            ref={content}
+            ref={container}
             style={{
-              width: screen.width,
-              height: screen.height,
-              paddingRight: 15,
-              paddingBottom: 15,
-              position: 'relative',
-              boxSizing: 'border-box',
-              overflow: 'hidden',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              height: '100%',
+              width: '100%',
+              overflow: 'overlay',
+              transform: 'scale(1.5)',
             }}
           >
-            {props.children}
-            <ResizeHandle type={ResizeHandleType.Resize}>
-              <IconWidget infer="DragMove" style={{ pointerEvents: 'none' }} />
-            </ResizeHandle>
-            <ResizeHandle type={ResizeHandleType.ResizeHeight}>
-              <IconWidget infer="Menu" style={{ pointerEvents: 'none' }} />
-            </ResizeHandle>
-            <ResizeHandle type={ResizeHandleType.ResizeWidth}>
-              <IconWidget infer="Menu" style={{ pointerEvents: 'none' }} />
-            </ResizeHandle>
+            <div
+              ref={content}
+              className={`${prefix}-content`}
+              style={{
+                width: screen.width,
+                height: screen.height,
+                paddingRight: 15,
+                paddingBottom: 15,
+                position: 'relative',
+                boxSizing: 'border-box',
+                overflow: 'hidden',
+              }}
+            >
+              {props.children}
+              <ResizeHandle type={ResizeHandleType.Resize}>
+                <IconWidget
+                  infer="DragMove"
+                  style={{ pointerEvents: 'none' }}
+                />
+              </ResizeHandle>
+              <ResizeHandle type={ResizeHandleType.ResizeHeight}>
+                <IconWidget infer="Menu" style={{ pointerEvents: 'none' }} />
+              </ResizeHandle>
+              <ResizeHandle type={ResizeHandleType.ResizeWidth}>
+                <IconWidget infer="Menu" style={{ pointerEvents: 'none' }} />
+              </ResizeHandle>
+            </div>
           </div>
-        </div>
+        </InfiniteViewer>
       </div>
     )
   })

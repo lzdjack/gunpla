@@ -1,6 +1,10 @@
 @import '../../variables.less';
 
 .@{prefix-cls}-responsive-simulator {
+  // background-color: var(--dn-responsive-simulator-bg-color);
+}
+
+.@{prefix-cls}-responsive-simulator-content {
   background-color: var(--dn-responsive-simulator-bg-color);
 }
 
@@ -53,4 +57,15 @@
     background: var(--dn-resize-handle-hover-bg-color);
     color: var(--dn-resize-handle-hover-color);
   }
+}
+
+.@{prefix-cls}-infinite-viewer {
+  height: 100%;
+  width: 100%;
+  min-height: 100px;
+  position: relative;
+  outline: none;
+  box-sizing: border-box;
+  user-select: none;
+  overflow: overlay;
 }

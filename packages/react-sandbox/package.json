@@ -1,6 +1,6 @@
 {
   "name": "@gunpla/react-sandbox",
-  "version": "1.0.1",
+  "version": "1.0.2-beta.0",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",
@@ -26,11 +26,11 @@
     "react": "16.x || 17.x"
   },
   "dependencies": {
-    "@gunpla/react": "1.0.1",
-    "@gunpla/shared": "1.0.1"
+    "@gunpla/react": "1.0.2-beta.0",
+    "@gunpla/shared": "1.0.2-beta.0"
   },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "2b059704d87862e441eef417c2cdf6d95fa24f6d"
+  "gitHead": "5389ee813d1227caa129d408423cc6babdb0c2e2"
 }
