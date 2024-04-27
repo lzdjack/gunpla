@@ -30,6 +30,41 @@ export const useResizeEffect = (engine: Engine) => {
     return
   }
 
+  const setResizable = (node) => {
+    const element = node.getElement()
+    const rect = node.getElementOffsetRect()
+
+    node.props = node.props || {}
+    node.props.style = node.props.style || {}
+    node.props.style.width = rect.width + 'px'
+    node.props.style.height = rect.height + 'px'
+
+    const allowResize = node.allowResize()
+    if (allowResize) {
+      const allowX = allowResize.includes('x')
+      if (allowX) {
+        const width = node.designerProps.resizable?.width?.(
+          node,
+          element,
+          rect.width
+        )
+        width?.minus()
+        width?.minus()
+      }
+
+      const allowY = allowResize.includes('y')
+      if (allowY) {
+        const height = node.designerProps.resizable?.height?.(
+          node,
+          element,
+          rect.height
+        )
+        height?.minus()
+        height?.minus()
+      }
+    }
+  }
+
   engine.subscribeTo(DragStartEvent, (event) => {
     const target = event.data.target as HTMLElement
     const currentWorkspace =
@@ -53,6 +88,8 @@ export const useResizeEffect = (engine: Engine) => {
               type: 'resize',
               direction: handler.direction,
             })
+
+            setResizable(node)
           }
         }
       }
@@ -85,8 +122,10 @@ export const useResizeEffect = (engine: Engine) => {
     const currentWorkspace =
       event.context?.workspace ?? engine.workbench.activeWorkspace
     const helper = currentWorkspace?.operation.transformHelper
-    if (helper) {
-      helper.dragEnd()
-    }
+    const dragNodes = helper.dragNodes
+    if (!dragNodes.length) return
+    dragNodes.forEach((node) => setResizable(node))
+
+    if (helper) helper.dragEnd()
   })
 }

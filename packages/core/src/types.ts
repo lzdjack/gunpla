@@ -39,14 +39,16 @@ export type IEngineContext = {
 export type IResizable = {
   width?: (
     node: TreeNode,
-    element: Element
+    element: Element,
+    x: string | number
   ) => {
     plus: () => void
     minus: () => void
   }
   height?: (
     node: TreeNode,
-    element: Element
+    element: Element,
+    y: string | number
   ) => {
     plus: () => void
     minus: () => void
@@ -54,14 +56,14 @@ export type IResizable = {
 }
 
 export type ITranslate = {
-  x: (
+  x?: (
     node: TreeNode,
     element: HTMLElement,
     diffX: string | number
   ) => {
     translate: () => void
   }
-  y: (
+  y?: (
     node: TreeNode,
     element: HTMLElement,
     diffY: string | number

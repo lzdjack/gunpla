@@ -1,6 +1,6 @@
 {
   "name": "@gunpla/formily-next",
-  "version": "1.0.2-beta.0",
+  "version": "1.0.2-beta.1",
   "license": "MIT",
   "main": "lib",
   "module": "esm",
@@ -29,7 +29,7 @@
     "@formily/react": "^2.0.2",
     "@formily/reactive": "^2.0.2",
     "@formily/shared": "^2.0.2",
-    "@gunpla/react-settings-form": "1.0.2-beta.0",
+    "@gunpla/react-settings-form": "1.0.2-beta.1",
     "autoprefixer": "^9.0",
     "file-loader": "^5.0.2",
     "fs-extra": "^8.1.0",
@@ -61,10 +61,10 @@
     "react-is": ">=16.8.0 || >=17.0.0"
   },
   "dependencies": {
-    "@gunpla/core": "1.0.2-beta.0",
-    "@gunpla/formily-setters": "1.0.2-beta.0",
-    "@gunpla/formily-transformer": "1.0.2-beta.0",
-    "@gunpla/react": "1.0.2-beta.0"
+    "@gunpla/core": "1.0.2-beta.1",
+    "@gunpla/formily-setters": "1.0.2-beta.1",
+    "@gunpla/formily-transformer": "1.0.2-beta.1",
+    "@gunpla/react": "1.0.2-beta.1"
   },
   "publishConfig": {
     "access": "public"
