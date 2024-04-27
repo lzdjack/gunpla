@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.2-beta.1(2024-04-27)
+
+### No Change Log
+
 ## v1.0.2-beta.0(2024-04-15)
 
 ### No Change Log
@@ -385,13 +389,3 @@
 ### :tada: Enhancements
 
 1. [feat(react): add more source icons](https://github.com/lzdjack/gunpla/commit/75963da) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
-
-## v1.0.0-beta.11(2021-09-29)
-
-### :tada: Enhancements
-
-1. [feat(react): support normalize DroppableWidget](https://github.com/lzdjack/gunpla/commit/729410a) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
-
-### :beetle: Bug Fixes
-
-1. [fix: fix controlled props can not update](https://github.com/lzdjack/gunpla/commit/dcffdeb) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
