@@ -1,4 +1,4 @@
-import { IEventProps, Event } from '@gunpla/shared'
+import { IEventProps, Event, Point } from '@gunpla/shared'
 import { ISchema } from '@formily/json-schema'
 import {
   Engine,
@@ -61,14 +61,14 @@ export type ITranslate = {
     element: HTMLElement,
     diffX: string | number
   ) => {
-    translate: () => void
+    translate: (point: Point) => void
   }
   y?: (
     node: TreeNode,
     element: HTMLElement,
     diffY: string | number
   ) => {
-    translate: () => void
+    translate: (point: Point) => void
   }
 }
 

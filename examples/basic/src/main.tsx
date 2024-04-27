@@ -212,41 +212,209 @@ const CardBehavior = createBehavior({
   designerProps: {
     droppable: true,
     resizable: {
-      width(node, element) {
+      width(node, element, x) {
         return {
-          plus: () => {},
-          minus: () => {},
+          plus: () => {
+            node.props = node.props || {}
+            node.props.style = node.props?.style || {}
+            node.props.style.width = x + 'px'
+          },
+          minus: () => {
+            node.props = node.props || {}
+            node.props.style = node.props?.style || {}
+            node.props.style.width = x + 'px'
+          },
         }
       },
-      height(node, element) {
+      height(node, element, y) {
         return {
-          plus: () => {},
-          minus: () => {},
+          plus: () => {
+            node.props = node.props || {}
+            node.props.style = node.props?.style || {}
+            node.props.style.height = y + 'px'
+          },
+          minus: () => {
+            node.props = node.props || {}
+            node.props.style = node.props?.style || {}
+            node.props.style.height = y + 'px'
+          },
         }
       },
     },
     translatable: {
       x(node, element, diffX) {
         return {
-          translate: () => {},
+          translate: (point) => {
+            node.props = node.props || {}
+            node.props.style = node.props.style || {}
+            node.props.style.position = 'absolute'
+            node.props.style.left = '0px'
+            node.props.style.top = '0px'
+            node.props.style.transform = `translate3d(${point.x}px,${point.y}px,0)`
+          },
         }
       },
       y(node, element, diffY) {
         return {
-          translate: () => {},
+          translate: (point) => {
+            node.props = node.props || {}
+            node.props.style = node.props.style || {}
+            node.props.style.position = 'absolute'
+            node.props.style.left = '0px'
+            node.props.style.top = '0px'
+            node.props.style.transform = `translate3d(${point.x}px,${point.y}px,0)`
+          },
         }
+      },
+    },
+    propsSchema: {
+      type: 'object',
+      $namespace: 'Field',
+      properties: {
+        'field-properties': {
+          type: 'void',
+          'x-component': 'CollapseItem',
+          title: '字段属性',
+          properties: {
+            title: {
+              type: 'string',
+              'x-decorator': 'FormItem',
+              'x-component': 'NumberPicker',
+            },
+
+            hidden: {
+              type: 'string',
+              'x-decorator': 'FormItem',
+              'x-component': 'Switch',
+            },
+            default: {
+              'x-decorator': 'FormItem',
+              'x-component': 'ValueInput',
+            },
+            test: {
+              type: 'void',
+              title: '测试',
+              'x-decorator': 'FormItem',
+              'x-component': 'DrawerSetter',
+              'x-component-props': {
+                text: '打开抽屉',
+              },
+              properties: {
+                test: {
+                  type: 'string',
+                  title: '测试输入',
+                  'x-decorator': 'FormItem',
+                  'x-component': 'Input',
+                },
+              },
+            },
+          },
+        },
+
+        'component-styles': {
+          type: 'void',
+          title: '样式',
+          'x-component': 'CollapseItem',
+          properties: {
+            'style.width': {
+              type: 'string',
+              'x-decorator': 'FormItem',
+              'x-component': 'SizeInput',
+            },
+            'style.height': {
+              type: 'string',
+              'x-decorator': 'FormItem',
+              'x-component': 'SizeInput',
+            },
+            'style.display': {
+              'x-component': 'DisplayStyleSetter',
+            },
+            'style.background': {
+              'x-component': 'BackgroundStyleSetter',
+            },
+            'style.boxShadow': {
+              'x-component': 'BoxShadowStyleSetter',
+            },
+            'style.font': {
+              'x-component': 'FontStyleSetter',
+            },
+            'style.margin': {
+              'x-component': 'BoxStyleSetter',
+            },
+            'style.padding': {
+              'x-component': 'BoxStyleSetter',
+            },
+            'style.borderRadius': {
+              'x-component': 'BorderRadiusStyleSetter',
+            },
+            'style.border': {
+              'x-component': 'BorderStyleSetter',
+            },
+          },
+        },
       },
     },
   },
   designerLocales: {
     'zh-CN': {
-      title: '卡片',
+      title: '输入框',
+      settings: {
+        title: '标题',
+        hidden: '是否隐藏',
+        default: '默认值',
+        style: {
+          width: '宽度',
+          height: '高度',
+          display: '展示',
+          background: '背景',
+          boxShadow: '阴影',
+          font: '字体',
+          margin: '外边距',
+          padding: '内边距',
+          borderRadius: '圆角',
+          border: '边框',
+        },
+      },
     },
     'en-US': {
-      title: 'Card',
+      title: 'Input',
+      settings: {
+        title: 'Title',
+        hidden: 'Hidden',
+        default: 'Default Value',
+        style: {
+          width: 'Width',
+          height: 'Height',
+          display: 'Display',
+          background: 'Background',
+          boxShadow: 'Box Shadow',
+          font: 'Font',
+          margin: 'Margin',
+          padding: 'Padding',
+          borderRadius: 'Border Radius',
+          border: 'Border',
+        },
+      },
     },
     'ko-KR': {
-      title: '카드',
+      title: '입력',
+      settings: {
+        title: '텍스트',
+        hidden: '숨김 여부',
+        default: '기본 설정 값',
+        style: {
+          width: '너비',
+          height: '높이',
+          display: '디스플레이',
+          background: '배경',
+          boxShadow: '그림자 박스',
+          font: '폰트',
+          margin: '마진',
+          padding: '패딩',
+          borderRadius: '테두리 굴곡',
+          border: '테두리',
+        },
+      },
     },
   },
 })

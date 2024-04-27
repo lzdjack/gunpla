@@ -34,11 +34,6 @@ export const useResizeEffect = (engine: Engine) => {
     const element = node.getElement()
     const rect = node.getElementOffsetRect()
 
-    node.props = node.props || {}
-    node.props.style = node.props.style || {}
-    node.props.style.width = rect.width + 'px'
-    node.props.style.height = rect.height + 'px'
-
     const allowResize = node.allowResize()
     if (allowResize) {
       const allowX = allowResize.includes('x')
@@ -69,6 +64,7 @@ export const useResizeEffect = (engine: Engine) => {
     const target = event.data.target as HTMLElement
     const currentWorkspace =
       event.context?.workspace ?? engine.workbench.activeWorkspace
+
     if (!currentWorkspace) return
     const handler = findStartNodeHandler(target)
     const helper = currentWorkspace.operation.transformHelper
@@ -76,10 +72,12 @@ export const useResizeEffect = (engine: Engine) => {
       const selectionElement = handler.element.closest(
         `*[${engine.props.nodeSelectionIdAttrName}]`
       ) as HTMLElement
+
       if (selectionElement) {
         const nodeId = selectionElement.getAttribute(
           engine.props.nodeSelectionIdAttrName
         )
+
         if (nodeId) {
           const node = engine.findNodeById(nodeId)
           if (node) {

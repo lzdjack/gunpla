@@ -1,26 +1,22 @@
-import { Engine, CursorDragType } from '../models'
+import { Engine, CursorDragType, TreeNode } from '../models'
 import { DragStartEvent, DragMoveEvent, DragStopEvent } from '../events'
-import { calcElementTranslate } from '@gunpla/shared'
+import { Point, calcElementTranslate } from '@gunpla/shared'
+import { TransformHelper } from '../models/TransformHelper'
 
 export const useTranslateEffect = (engine: Engine) => {
-  const setTranslatable = (node, helper) => {
+  const setTranslatable = (node: TreeNode, helper: TransformHelper) => {
     const element = node.getElement()
     const rect = calcElementTranslate(element)
 
     const x = rect.x + helper.deltaX,
       y = rect.y + helper.deltaY
 
-    node.props = node.props || {}
-    node.props.style = node.props.style || {}
-    node.props.style.position = 'absolute'
-    node.props.style.left = '0px'
-    node.props.style.top = '0px'
-    node.props.style.transform = `translate3d(${x}px,${y}px,0)`
+    const point = new Point(x, y)
 
     const horizontal = node?.designerProps?.translatable?.x(node, element, x)
     const vertical = node?.designerProps?.translatable?.y(node, element, y)
-    horizontal.translate()
-    vertical.translate()
+    horizontal.translate(point)
+    vertical.translate(point)
   }
 
   engine.subscribeTo(DragStartEvent, (event) => {
