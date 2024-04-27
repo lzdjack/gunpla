@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.3(2024-04-27)
+
+### No Change Log
+
 ## v1.0.2(2024-04-27)
 
 ### No Change Log
@@ -377,9 +381,3 @@
 ### :blush: Other Changes
 
 1. [chore(core): improve dnd](https://github.com/lzdjack/gunpla/commit/f59b65e) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
-
-## v1.0.0-beta.15(2021-10-04)
-
-### :beetle: Bug Fixes
-
-1. [fix(react): fix styles](https://github.com/lzdjack/gunpla/commit/19df7b2) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
