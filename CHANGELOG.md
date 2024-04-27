@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.2(2024-04-27)
+
+### No Change Log
+
 ## v1.0.2-beta.3(2024-04-27)
 
 ### No Change Log
@@ -379,9 +383,3 @@
 ### :beetle: Bug Fixes
 
 1. [fix(react): fix styles](https://github.com/lzdjack/gunpla/commit/19df7b2) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
-
-## v1.0.0-beta.14(2021-10-04)
-
-### :blush: Other Changes
-
-1. [chore(react): improve theme styles](https://github.com/lzdjack/gunpla/commit/51a0fde) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )

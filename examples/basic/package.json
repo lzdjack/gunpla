@@ -1,6 +1,6 @@
 {
   "name": "@gunpla/basic-example",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "private": true,
   "engines": {
@@ -27,11 +27,11 @@
   "dependencies": {
     "@formily/reactive": "^2.0.2",
     "@formily/reactive-react": "^2.0.2",
-    "@gunpla/core": "1.0.2",
-    "@gunpla/react": "1.0.2",
-    "@gunpla/react-sandbox": "1.0.2",
-    "@gunpla/react-settings-form": "1.0.2",
-    "@gunpla/shared": "1.0.2",
+    "@gunpla/core": "1.0.3",
+    "@gunpla/react": "1.0.3",
+    "@gunpla/react-sandbox": "1.0.3",
+    "@gunpla/react-settings-form": "1.0.3",
+    "@gunpla/shared": "1.0.3",
     "antd": "^4.15.2",
     "react": "^16.8.x",
     "react-dom": "^16.8.x",
