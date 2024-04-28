@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.4(2024-04-28)
+
+### No Change Log
+
 ## v1.0.3(2024-04-27)
 
 ### No Change Log
@@ -375,9 +379,3 @@
 1. [chore(shared): improve element layout calculator](https://github.com/lzdjack/gunpla/commit/f29ec8a) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
 
 1. [chore(core): improve remove](https://github.com/lzdjack/gunpla/commit/8eeed0a) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
-
-## v1.0.0-beta.16(2021-10-06)
-
-### :blush: Other Changes
-
-1. [chore(core): improve dnd](https://github.com/lzdjack/gunpla/commit/f59b65e) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )

@@ -1,6 +1,6 @@
 {
   "name": "@gunpla/core",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",
@@ -33,7 +33,7 @@
     "@formily/reactive": "^2.0.2"
   },
   "dependencies": {
-    "@gunpla/shared": "1.0.4",
+    "@gunpla/shared": "1.0.5",
     "@juggle/resize-observer": "^3.3.1"
   },
   "publishConfig": {
