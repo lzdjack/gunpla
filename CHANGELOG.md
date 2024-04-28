@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.5(2024-04-28)
+
+### No Change Log
+
 ## v1.0.4(2024-04-28)
 
 ### No Change Log
@@ -367,15 +371,3 @@
 ### :beetle: Bug Fixes
 
 1. [fix(react): fix CompositePanel](https://github.com/lzdjack/gunpla/commit/03eb84d) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
-
-## v1.0.0-beta.17(2021-10-06)
-
-### :tada: Enhancements
-
-1. [feat(react): add source icons](https://github.com/lzdjack/gunpla/commit/de56564) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
-
-### :blush: Other Changes
-
-1. [chore(shared): improve element layout calculator](https://github.com/lzdjack/gunpla/commit/f29ec8a) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )
-
-1. [chore(core): improve remove](https://github.com/lzdjack/gunpla/commit/8eeed0a) :point_right: ( [zhili.wzl](https://github.com/zhili.wzl) )

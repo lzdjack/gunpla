@@ -1,6 +1,6 @@
 {
   "name": "@gunpla/formily-transformer",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "main": "lib",
   "engines": {
@@ -33,8 +33,8 @@
     "@formily/json-schema": "^2.0.2"
   },
   "dependencies": {
-    "@gunpla/core": "1.0.5",
-    "@gunpla/shared": "1.0.5"
+    "@gunpla/core": "1.0.6",
+    "@gunpla/shared": "1.0.6"
   },
   "gitHead": "5389ee813d1227caa129d408423cc6babdb0c2e2"
 }
